@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "module": "commonjs",
+        "target": "es2017",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "baseUrl": "./",
+        "outDir": "dist"
+    }
+}
