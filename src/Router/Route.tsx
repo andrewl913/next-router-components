@@ -9,7 +9,10 @@ type Props = {
 }
 
 const Route: React.SFC<Props> = ({component, to, queryKey, router }) => {
-    if(!router && !router.query) {
+    if(!router) {
+        return null;
+    }
+    if(!router.query) {
         return null;
     }
     
@@ -25,4 +28,7 @@ const Route: React.SFC<Props> = ({component, to, queryKey, router }) => {
     return null;
 }
 
-export default withRouter(Route);
+const DecoratedRoute = withRouter(Route);
+export { Route, DecoratedRoute }; 
+
+export default Route;
