@@ -1,5 +1,5 @@
 import { SingletonRouter } from "next/router";
-import { shallow, mount } from "enzyme";
+import { shallow } from "enzyme";
 import { Route } from "../src/Router/Route" 
 import React from "react";
 import { configure } from "enzyme";
