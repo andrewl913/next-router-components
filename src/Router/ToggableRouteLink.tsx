@@ -5,7 +5,7 @@ import { RouteParams } from "next-routes";
 
 type Props = {
     to: string;
-    router: SingletonRouter;
+    router?: SingletonRouter;
     queryKey: string;
     children: (args: ToggableRouteArgs) => JSX.Element
 };
