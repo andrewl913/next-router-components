@@ -1,4 +1,4 @@
 import { DecoratedRoute} from "./Router/Route";
-import ToggableRouteLink from "./Router/ToggableRouteLink";
+import TogglableRouteLink from "./Router/TogglableRouteLink";
 
-export { DecoratedRoute as Route, ToggableRouteLink }
+export { DecoratedRoute as Route, TogglableRouteLink }

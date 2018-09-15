@@ -7,14 +7,14 @@ type Props = {
     to: string;
     router?: SingletonRouter;
     queryKey: string;
-    children: (args: ToggableRouteArgs) => JSX.Element
+    children: (args: TogglableRouteArgs) => JSX.Element
 };
 
-type ToggableRouteArgs = {
+type TogglableRouteArgs = {
     isSelected: boolean;
 }
 
-const ToggableRouteLink: React.SFC<Props> = ({ to, router, queryKey, children }) => {
+const TogglableRouteLink: React.SFC<Props> = ({ to, router, queryKey, children }) => {
     let navigationItemSelected = false;
     if (router.query[queryKey] !== null && router.query[queryKey] !== undefined) {
         navigationItemSelected = router.query[queryKey] === to;
@@ -35,4 +35,4 @@ const ToggableRouteLink: React.SFC<Props> = ({ to, router, queryKey, children })
     );
 };
 
-export default withRouter(ToggableRouteLink);
+export default withRouter(TogglableRouteLink);
