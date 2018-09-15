@@ -38,7 +38,7 @@ describe("Router renders correctly", () => {
         expect(wrapper.isEmptyRender()).toBe(true);
     });
 
-    it("should render the component if params  match", () => {     
+    it("should render the component if params  atch", () => {     
         const wrapper = shallow(
             <Route queryKey="foo" to="bar" router={fakeRouter} component={FakeComponent} />
         );
@@ -46,7 +46,7 @@ describe("Router renders correctly", () => {
         expect(wrapper.isEmptyRender()).toBe(false);
     })
 
-    it("should render null if we a component isn't passed in", () => {
+    it("should render null if a component isn't passed in", () => {
         const wrapper = shallow(
             <Route queryKey="foo" to="bar" component={null} router={fakeRouter} />
         );

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { SingletonRouter, withRouter } from "next/router";
 
 type Props = {
@@ -30,5 +30,3 @@ const Route: React.SFC<Props> = ({component, to, queryKey, router }) => {
 
 const DecoratedRoute = withRouter(Route);
 export { Route, DecoratedRoute }; 
-
-export default Route;
